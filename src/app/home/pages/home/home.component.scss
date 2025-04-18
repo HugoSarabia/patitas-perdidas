@@ -1,0 +1,126 @@
+li{
+  list-style: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  text-decoration:none;
+  }
+  a {
+    text-decoration:none;
+    color: #000;
+  }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.header-container {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  img {
+    width: 70px;
+    height: auto;
+  }
+}
+.menu {
+  display: flex;
+  gap: 9rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+}
+.account {
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+}
+.register-pet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  gap: 10rem;
+  cursor: pointer;
+}
+.btn-user {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.btn-login {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn-header {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn-header:hover {
+  background-color: #0056b3;
+}
+.user-dropdown {
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  // background-color: rgba(255, 255, 255, 0.375);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 200px;
+}
+.user-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  color: #000;
+}
+.list-element {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
